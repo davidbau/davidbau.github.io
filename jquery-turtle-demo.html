@@ -24,12 +24,13 @@ see.init({title:'Welcome!  In this panel you can ' +
     '<mark>(lt 91; fd 200) for x in [1..91]</mark>;<br>' +
     'or hatch new turtles: ' +
     '<mark>z = hatch 100</mark>; ' +
-    '<mark>z.apart -&gt; this.fd random 300</mark>; ' +
+    '<mark>z.apart -&gt; @fd random 300</mark>; ' +
     '<mark>z.rt 90</mark>; ' +
-    '<mark>z.apart (j) -&gt; this.fd 5 * j</mark>',
+    '<mark>z.apart (j) -&gt; @fd 5 * j</mark>',
     eval:eval(see.cs),height:200})
 # -edit-below-
 pen 'red'
+(lt 90; fd 50) for x in [1..4]
 
 #]]></script>
 </body>
