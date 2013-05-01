@@ -4,7 +4,7 @@
 <script src="//raw.github.com/davidbau/jquery-turtle/master/jquery-turtle.js"></script>
 <script src="//raw.github.com/jashkenas/coffee-script/master/extras/coffee-script.js"></script>
 <script type="text/coffeescript">
-$.turtle()
+eval($.turtle())  # Initialize turtle learning environment.
 
 pen 'red'
 for x in [1..4]
