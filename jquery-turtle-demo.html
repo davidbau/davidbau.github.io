@@ -8,8 +8,7 @@
 <script data-editable="turtle script"
     type="text/coffeescript" data-editsize="1">#<![CDATA[
 # Show a debug panel that inspects local vars in this block.
-eval($.turtle());
-see.init({title:'Welcome!  Try: ' +
+eval($.turtle({title:'Welcome!  Try: ' +
     '<mark>fd 50</mark>; ' +
     '<mark>rt 90</mark>; ' +
     '<mark>bk random 100</mark>; ' +
@@ -25,7 +24,7 @@ see.init({title:'Welcome!  Try: ' +
     '<br>or hatch new turtles: ' +
     '<mark>z = hatch 100</mark>; ' +
     '<mark>z.apart (j) -&gt; @fd 5 * j</mark>',
-    height:200})
+    panelheight:200}));
 # -edit-below-
 pen 'red'
 (lt 90; fd 50) for x in [1..4]
